@@ -2,6 +2,8 @@ Changes file for WebService::OpenStates
 
 {{$NEXT}}
 
+1.03      2026-01-02 10:28:18-05:00 America/New_York
+
   - Add another couple of modules to the prereqs.
 
 1.02      2026-01-02 10:15:14-05:00 America/New_York

@@ -1,6 +1,6 @@
 package WebService::OpenStates;
 
-our $VERSION = '1.03';
+our $VERSION = '1.04';
 
 use strict;
 use warnings;
