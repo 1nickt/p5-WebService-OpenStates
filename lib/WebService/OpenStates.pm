@@ -65,7 +65,7 @@ method legislators_for_location ((NumRange[-90,90]) :$lat, (NumRange[-180,180]) 
 
             my @legislators = @{ $data->{results} };
 
-            for my $legislator (@legislators) {
+            for my $legislator (sort { $a->{family_name} cmp $b->{family_name} } @legislators) {
                 my $result = {
                     name    => $legislator->{name},
                     title   => join(' ', $legislator->{jurisdiction}{name}, $legislator->{current_role}{title}),
@@ -110,7 +110,7 @@ L<https://open.pluralpolicy.com/accounts/login/?next=/accounts/profile/#apikey>.
 
   my $client = WebService::OpenStates->new( api_key => '***' );
 
-  my $res = $client->legislators_for_location(lat => '37.302268', lon => '-78.39263);
+  my $res = $client->legislators_for_location(lat => 37.302268, lon => -78.39263);
 
   if ( $res->{status} eq 'error') {
       # handle the error returned (JSON obj, see below)

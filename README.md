@@ -14,7 +14,7 @@ You must obtain an API key (free) from Open States to use this package. See
 
     my $client = WebService::OpenStates->new( api_key => '***' );
 
-    my $res = $client->legislators_for_location(lat => '37.302268', lon => '-78.39263);
+    my $res = $client->legislators_for_location(lat => 37.302268, lon => -78.39263);
 
     if ( $res->{status} eq 'error') {
         # handle the error returned (JSON obj, see below)
