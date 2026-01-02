@@ -2,6 +2,8 @@ Changes file for WebService::OpenStates
 
 {{$NEXT}}
 
+  - Add another couple of modules to the prereqs.
+
 1.02      2026-01-02 10:15:14-05:00 America/New_York
 
   - Fix minimum Perl version and missing module.
