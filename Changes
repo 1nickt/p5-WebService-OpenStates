@@ -2,6 +2,8 @@ Changes file for WebService::OpenStates
 
 {{$NEXT}}
 
+  - Fix minimum Perl version and missing module.
+
 1.01      2026-01-01 19:52:08-05:00 America/New_York
 
   - Sort results by legislators' last names.

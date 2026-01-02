@@ -4,7 +4,7 @@ our $VERSION = '1.02';
 
 use strict;
 use warnings;
-use v5.10;
+use v5.14;
 
 use Carp 'croak';
 use HTTP::Tiny;
